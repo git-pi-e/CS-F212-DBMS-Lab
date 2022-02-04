@@ -16,20 +16,20 @@ desc users;
 
 ### 1)
 
-desc users;
-alter table users change MembershipCategory Account_Type enum('P','F') DEFAULT 'F';
-desc users;
+desc users;  
+alter table users change MembershipCategory Account_Type enum('P','F') DEFAULT 'F';  
+desc users;  
 
 ### 2)
 
-desc artists;
+desc artists;  
 alter table artists drop column Nationality;
-desc artists;
+desc artists;  
 
 ### 3)
 
-desc albums;
-alter table albums modify HoursStreamed decimal(6,2) DEFAULT 0;
+desc albums;  
+alter table albums modify HoursStreamed decimal(6,2) DEFAULT 0;  
 desc albums;
 
 ## Question 4
@@ -38,8 +38,8 @@ show create table albums;
 
 ## Question 5
 
-INSERT INTO albums(AlbumID, AlbumName, ArtistName, HoursStreamed, Label, Genre, ReleaseDate) VALUES (39391, 'A Thousand Suns', 'Linkin Park', 128, 'Warner Bros', 'Rock', '2016-06-17');
-INSERT INTO albums(AlbumID, AlbumName, ArtistName, HoursStreamed, Label, Genre, ReleaseDate) VALUES (14573, 'Overexposed', 'Maroon 5',  452, 'A&M', 'Funk', '2016-11-11');
-INSERT INTO albums(AlbumID, AlbumName, ArtistName, HoursStreamed, Label, Genre, ReleaseDate) VALUES (14573, 'Overexposed', 'Maroon',  452, 'A&M', 'Funk', '2016-11-31'); // will show error
+INSERT INTO albums(AlbumID, AlbumName, ArtistName, HoursStreamed, Label, Genre, ReleaseDate) VALUES (39391, 'A Thousand Suns', 'Linkin Park', 128, 'Warner Bros', 'Rock', '2016-06-17');  
+INSERT INTO albums(AlbumID, AlbumName, ArtistName, HoursStreamed, Label, Genre, ReleaseDate) VALUES (14573, 'Overexposed', 'Maroon 5',  452, 'A&M', 'Funk', '2016-11-11');  
+INSERT INTO albums(AlbumID, AlbumName, ArtistName, HoursStreamed, Label, Genre, ReleaseDate) VALUES (14573, 'Overexposed', 'Maroon',  452, 'A&M', 'Funk', '2016-11-31'); // will show error  
 
 
