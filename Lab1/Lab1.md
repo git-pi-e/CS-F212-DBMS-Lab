@@ -2,15 +2,15 @@
 
 ## Question 1
 
-show databases;
-create database db212BITSStream;
-show databases;
-use db212BITSStream;
-desc albums;
-CREATE TABLE artists (ArtistID int PRIMARY KEY, Name varchar(20) NOT NULL, ActiveSince date NOT NULL, RetirementDate date, NumberOfFollowers int, Nationality varchar(20));
-desc artists;
-CREATE TABLE users (UserID int, UserName varchar(30), EmailID varchar(20) UNIQUE NOT NULL, MembershipCategory enum('P','F') DEFAULT 'F', PRIMARY KEY(UserID, UserName));
-desc users;
+show databases;  
+create database db212BITSStream;  
+show databases;  
+use db212BITSStream;  
+desc albums;  
+CREATE TABLE artists (ArtistID int PRIMARY KEY, Name varchar(20) NOT NULL, ActiveSince date NOT NULL, RetirementDate date, NumberOfFollowers int, Nationality varchar(20));  
+desc artists;  
+CREATE TABLE users (UserID int, UserName varchar(30), EmailID varchar(20) UNIQUE NOT NULL, MembershipCategory enum('P','F') DEFAULT 'F', PRIMARY KEY(UserID, UserName));  
+desc users;  
 
 ## Question 3
 
